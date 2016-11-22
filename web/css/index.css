@@ -1,0 +1,33 @@
+.titre {
+    font-weight: bold;
+    margin: 30px;
+    text-align: center;
+    background-color: lightsteelblue;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 5rem;
+}
+
+
+.soustitre1 {
+    font-weight: bold;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.soustitre2 {
+    font-weight: bold;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    text-align: center;
+    background-color: yellowgreen;
+    padding: 10px;
+    font-size: 3rem;
+}

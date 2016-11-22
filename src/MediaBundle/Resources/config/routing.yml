@@ -1,0 +1,12 @@
+media_album:
+    resource: "@MediaBundle/Resources/config/routing/album.yml"
+    prefix:   /album
+
+media_commentaire:
+        resource: "@MediaBundle/Resources/config/routing/commentaire.yml"
+        prefix:   /commentaire
+
+
+media_homepage:
+    path:     /
+    defaults: { _controller: MediaBundle:Default:index }
