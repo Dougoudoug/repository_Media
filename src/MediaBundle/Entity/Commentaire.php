@@ -10,6 +10,20 @@ use Doctrine\ORM\Mapping as ORM;
 class Commentaire
 {
     /**
+     * @ORM\ManyToOne(targetEntity="Album", inversedBy="commentaires")
+     */
+    private $album;
+
+
+
+
+
+
+
+
+
+
+    /**
      * @var int
      */
     private $id;
@@ -69,6 +83,22 @@ class Commentaire
         $this->commentaire = $commentaire;
 
         return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAlbum()
+    {
+        return $this->album;
+    }
+
+    /**
+     * @param mixed $album
+     */
+    public function setAlbum($album)
+    {
+        $this->album = $album;
     }
 
     /**

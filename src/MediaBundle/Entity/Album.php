@@ -9,6 +9,14 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Album
 {
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="Commentaire", mappedBy="album")
+     */
+    private $commentaires;
+
+
     /**
      * @var int
      */
@@ -125,6 +133,22 @@ class Album
         $this->support = $support;
 
         return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCommentaires()
+    {
+        return $this->commentaires;
+    }
+
+    /**
+     * @param mixed $commentaires
+     */
+    public function setCommentaires($commentaires)
+    {
+        $this->commentaires = $commentaires;
     }
 
     /**
